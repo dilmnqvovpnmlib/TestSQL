@@ -12,7 +12,7 @@ services:
       MYSQL_PASSWORD: docker
       TZ: Asia/Tokyo
     volumes:
-      - ./conf/initdb.d:/docker-entrypoint-initdb.d
+      - ./initdb.d:/docker-entrypoint-initdb.d
       - ./data:/var/lib/mysql
       - ./conf/my.cnf:/etc/mysql/conf.d/my.cnf
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
