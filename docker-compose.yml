@@ -7,7 +7,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: drf
+      MYSQL_DATABASE: test
       MYSQL_USER: docker
       MYSQL_PASSWORD: docker
       TZ: Asia/Tokyo
